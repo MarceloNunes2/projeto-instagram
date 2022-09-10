@@ -68,8 +68,34 @@ input{
 button:hover{
     background-color: #03436d;
 }
-.ou{
-    text-align: center;
+.separador{
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1rem 0 1.625rem;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.separador::after{
+    content: "";
+    width: 110px;
+    height: 1px;
+    display: block;
+    align-self: center;
+    background-color: #262626;
+    margin-left: 9px;
+    margin-right: 5px;
+}
+.separador::before{
+    content: "";
+    width: 110px;
+    height: 1px;
+    display: block;
+    align-self: center;
+    background-color: #262626;
+    margin: 8px;
 }
 .login-face{
     color: #385185;
@@ -114,4 +140,10 @@ button:hover{
 .logo-app{
     width: 150px;
 
+}
+
+@media(max-width:877px){
+    .container-principal{
+        display: none;
+    }
 }
